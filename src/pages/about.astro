@@ -1,9 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/Sidebar.astro';
 ---
 
 <Layout title="About Us">
-    <main>
-        <h1>About Us</h1>
+  <div class="flex">
+    <aside class="w-1/4">
+      <Sidebar />
+    </aside>
+    <main class="w-3/4">
+      <h1 class="text-3xl font-bold text-gray-800 dark:text-white">About Us</h1>
     </main>
+  </div>
 </Layout>
